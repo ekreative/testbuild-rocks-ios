@@ -1,0 +1,8 @@
+#!/bin/sh
+DIR=$(cd "$(dirname "$0")"; pwd)
+mogenerator --v2 \
+    --model "$DIR/AppsV2.xcdatamodeld/AppsV2.xcdatamodel" \
+    --machine-dir "$DIR/CoreData/Machine" \
+    --human-dir "$DIR/CoreData/Human" \
+    --swift
+     

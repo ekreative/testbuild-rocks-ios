@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="taY-mL-Hez">
+            <objects>
+                <viewController storyboardIdentifier="login" id="v77-Pi-CzP" customClass="AVLoginController" customModule="AppsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OE7-0B-5qL"/>
+                        <viewControllerLayoutGuide type="bottom" id="EWv-v6-eWN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OrU-GH-QNN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG" translatesAutoresizingMaskIntoConstraints="NO" id="VSp-oe-3iG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sergey.polishchuk" borderStyle="roundedRect" placeholder="login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VF6-yU-H0A">
+                                <rect key="frame" x="71" y="343" width="458" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="ZyE-Z8-T8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-3d-CYy" customClass="AVLoginButton" customModule="AppsV2" customModuleProvider="target">
+                                <rect key="frame" x="215" y="456" width="170" height="44"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.41568627450980394" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2VV-aj-Ig5"/>
+                                    <constraint firstAttribute="width" constant="170" id="Utw-YL-YQv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="let’s rock!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letRockAction:" destination="v77-Pi-CzP" eventType="touchUpInside" id="UTy-Tm-wCD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234qwerty" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-fn-22o">
+                                <rect key="frame" x="71" y="400" width="458" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="kXV-NO-ykA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your Redmine login and password below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03J-cf-5eS">
+                                <rect key="frame" x="91" y="234" width="418" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43662754453793917" green="0.43662754453793917" blue="0.43662754453793917" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gew-SA-MEL">
+                                <rect key="frame" x="91" y="94" width="418" height="56"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nv6-fn-22o" secondAttribute="centerX" id="0YE-Wl-Fot"/>
+                            <constraint firstItem="VF6-yU-H0A" firstAttribute="top" secondItem="03J-cf-5eS" secondAttribute="bottom" constant="66" id="2Uq-CG-PFl"/>
+                            <constraint firstItem="nv6-fn-22o" firstAttribute="leading" secondItem="OrU-GH-QNN" secondAttribute="leading" constant="50" id="7dv-w8-L6F"/>
+                            <constraint firstItem="VSp-oe-3iG" firstAttribute="leading" secondItem="OrU-GH-QNN" secondAttribute="leading" id="92E-EZ-k6B"/>
+                            <constraint firstItem="VSp-oe-3iG" firstAttribute="centerX" secondItem="gew-SA-MEL" secondAttribute="centerX" id="D3w-MH-Hlg"/>
+                            <constraint firstItem="gew-SA-MEL" firstAttribute="top" secondItem="OE7-0B-5qL" secondAttribute="bottom" constant="74" id="FBh-7J-cFs"/>
+                            <constraint firstAttribute="trailing" secondItem="nv6-fn-22o" secondAttribute="trailing" constant="50" id="Iek-9R-t1t"/>
+                            <constraint firstAttribute="trailing" secondItem="03J-cf-5eS" secondAttribute="trailing" constant="80" id="Kz6-lJ-KTp"/>
+                            <constraint firstAttribute="trailing" secondItem="VSp-oe-3iG" secondAttribute="trailing" id="NQh-IH-h6Z"/>
+                            <constraint firstAttribute="centerX" secondItem="2ge-3d-CYy" secondAttribute="centerX" id="NS3-ru-bZ5"/>
+                            <constraint firstItem="03J-cf-5eS" firstAttribute="leading" secondItem="OrU-GH-QNN" secondAttribute="leading" constant="80" id="OA5-SE-jZ3"/>
+                            <constraint firstItem="03J-cf-5eS" firstAttribute="top" secondItem="gew-SA-MEL" secondAttribute="bottom" constant="84" id="R1e-I4-R2Q"/>
+                            <constraint firstItem="EWv-v6-eWN" firstAttribute="top" secondItem="VSp-oe-3iG" secondAttribute="bottom" id="T6x-G4-rcM"/>
+                            <constraint firstAttribute="trailing" secondItem="VF6-yU-H0A" secondAttribute="trailing" constant="50" id="VjV-3H-FFt"/>
+                            <constraint firstItem="VF6-yU-H0A" firstAttribute="leading" secondItem="OrU-GH-QNN" secondAttribute="leading" constant="50" id="XMT-Ye-wYR"/>
+                            <constraint firstItem="nv6-fn-22o" firstAttribute="top" secondItem="VF6-yU-H0A" secondAttribute="bottom" constant="18" id="f8W-ub-1bK"/>
+                            <constraint firstAttribute="centerX" secondItem="VF6-yU-H0A" secondAttribute="centerX" id="haL-kZ-FfJ"/>
+                            <constraint firstItem="2ge-3d-CYy" firstAttribute="top" secondItem="nv6-fn-22o" secondAttribute="bottom" constant="17" id="jk3-LI-ivA"/>
+                            <constraint firstItem="VSp-oe-3iG" firstAttribute="top" secondItem="OrU-GH-QNN" secondAttribute="top" id="thH-gG-HYc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginName" destination="VF6-yU-H0A" id="iGS-B6-GGQ"/>
+                        <outlet property="password" destination="nv6-fn-22o" id="fSN-Vf-bNu"/>
+                        <outlet property="submitButton" destination="2ge-3d-CYy" id="JBZ-nL-LUo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HxA-hC-kp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="460"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginBG" width="414" height="736"/>
+        <image name="login_logo" width="233" height="54"/>
+    </resources>
+</document>
