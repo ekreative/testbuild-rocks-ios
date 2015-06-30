@@ -15,8 +15,7 @@ class AVParentViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "navbar"), forBarMetrics: UIBarMetrics.Default)
-        
         UIBarButtonItem.appearance().setBackButtonBackgroundImage(UIImage(named: "back_button"), forState: UIControlState.Normal, barMetrics: UIBarMetrics.Default)
-        UIBarButtonItem.appearance().title = ""
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
     }
 }

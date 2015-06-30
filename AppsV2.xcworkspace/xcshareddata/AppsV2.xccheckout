@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>694C562E-1D90-4726-AC82-282E2C4DED7F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppsV2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>94BE97FD5973471FB3602FC2F0F483B29FAC7E6E</key>
+		<string>https://github.com/ekreative/testbuild-rocks-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppsV2.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>94BE97FD5973471FB3602FC2F0F483B29FAC7E6E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ekreative/testbuild-rocks-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>94BE97FD5973471FB3602FC2F0F483B29FAC7E6E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94BE97FD5973471FB3602FC2F0F483B29FAC7E6E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppsV2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
